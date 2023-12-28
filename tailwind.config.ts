@@ -9,7 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors:{
-        'light-gray-nav': '#EFE0E0',      'seal-brown-text': '#250202',   'red-link': '#D21212'
+        'light-gray-nav': '#EFE0E0',      
+        'seal-brown-text': '#250202',   
+        'red-link': '#D21212'
       },
     },
   },
