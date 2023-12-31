@@ -7,11 +7,14 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    backgroundImage: {
+      'header-footer': 'linear-gradient(#F22323, #AB0707)',
+    },
     extend: {
-      colors:{
-        'light-gray-nav': '#EFE0E0',      
-        'seal-brown-text': '#250202',   
-        'red-link': '#D21212'
+      colors: {
+        'page-color' : '#FAF4F4',
+        'seal-brown' : '#250202',
+        'red-link' : '#D21212'
       },
     },
   },

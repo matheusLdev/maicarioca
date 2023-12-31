@@ -1,5 +1,19 @@
-import { roboto_condensed } from './fonts';
+import Footer from '@/components/Footer/Footer';
+import Header from '@/components/Header/Header';
+import NextEvent from '@/components/NextEvent/NextEvent';
 
 export default function Home() {
-    return <h1 className={roboto_condensed.className}>@MaiCarioca</h1>;
+    return (
+        <>
+            <Header />
+            <NextEvent />
+            <section>
+                <h2>Meus Cosplays:</h2>
+                <a href='' target='_blank'>
+                    Ver todos os meus cosplays
+                </a>
+            </section>
+            <Footer />
+        </>
+    );
 }
