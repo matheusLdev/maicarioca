@@ -22,7 +22,7 @@ export default function HomePage() {
                             hobby faz uns 2 anos e desde então tenho me
                             apaixonado cada vez mais.
                         </p>
-                        <Link href='#' className='text-red-link text-base'>
+                        <Link href='#' className='text-red-link text-base m-1'>
                             Conheça mais sobre mim
                         </Link>
                     </div>
