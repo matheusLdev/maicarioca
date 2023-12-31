@@ -16,6 +16,9 @@ const config: Config = {
         'seal-brown' : '#250202',
         'red-link' : '#D21212'
       },
+      height: {
+        'photo-home-page' : '30rem'
+      }
     },
   },
   plugins: [],
