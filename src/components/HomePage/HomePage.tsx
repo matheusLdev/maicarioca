@@ -7,14 +7,14 @@ import Link from 'next/link';
 export default function HomePage() {
     return (
         <main className='w-full text-seal-brown flex justify-center'>
-            <div className='w-11/12 flex justify-center items-center gap-6'>
+            <div className='w-11/12 flex justify-center items-center gap-3'>
                 <Image
                     src={MaiCarioca1}
                     alt='Maicarioca Cosplay'
-                    className='h-photo-home-page rounded-lg'
+                    className='w-1/3 rounded-lg'
                 />
-                <div className='h-photo-home-page flex flex-col justify-around text-xl text-seal-brown'>
-                    <div className='flex flex-col gap-1'>
+                <div className=' h-4/5 flex flex-col justify-between text-xl text-seal-brown'>
+                    <div className='flex flex-col'>
                         <p>
                             Olá pessoal!! Sejam bem vindos. Eu sou a Thay, mais
                             conhecida como Mai Carioca e aqui vou mostrar um
@@ -22,18 +22,17 @@ export default function HomePage() {
                             hobby faz uns 2 anos e desde então tenho me
                             apaixonado cada vez mais.
                         </p>
-                        <Link href='#' className='text-red-link text-base m-1'>
+                        <Link href='#' className='text-red-link text-base mt-2'>
                             Conheça mais sobre mim
                         </Link>
                     </div>
-                    <div className='flex flex-col gap-1'>
-                        <p>Me siga no instagram:</p>
-                        <Link href='#' className='flex text-red-link text-base'>
-                            <Image
-                                className='m-1'
-                                src={Instagram}
-                                alt='Logo Instagram'
-                            />
+                    <div className='flex flex-col'>
+                        <p className='mb-2'>Me siga no instagram:</p>
+                        <Link
+                            href='#'
+                            className='flex text-red-link text-base gap-2'
+                        >
+                            <Image src={Instagram} alt='Logo Instagram' />
                             @maicarioca
                         </Link>
                     </div>
@@ -41,7 +40,7 @@ export default function HomePage() {
                 <Image
                     src={MaiCarioca2}
                     alt='Maicarioca Cosplay'
-                    className='h-photo-home-page rounded-lg'
+                    className='w-1/3 rounded-lg'
                 />
             </div>
         </main>

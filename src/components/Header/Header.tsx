@@ -5,7 +5,7 @@ import Fan from '@/assets/icons/closed-fan.svg';
 
 export default function Header() {
     return (
-        <header className='w-full h-20 bg-header-footer flex justify-around items-center text-slate-100 text-xl'>
+        <header className='h-20 bg-header-footer flex justify-around items-center text-slate-100 text-xl'>
             <Link href='#'>
                 <h1 className={`${roboto_condensed.className} text-5xl`}>
                     @MaiCarioca
