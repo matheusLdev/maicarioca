@@ -17,7 +17,11 @@ export default function RootLayout({
             <head>
                 <link rel='icon' href='icon.svg' type='image/x-icon' />
             </head>
-            <body className={roboto.className}>{children}</body>
+            <body
+                className={`${roboto.className} bg-page-color antialiased w-full my-0`}
+            >
+                {children}
+            </body>
         </html>
     );
 }

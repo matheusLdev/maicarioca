@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function HomePage() {
     return (
-        <main className='w-full bg-page-color text-seal-brown flex justify-center'>
+        <main className='w-full text-seal-brown flex justify-center'>
             <div className='w-11/12 flex justify-center items-center gap-6'>
                 <Image
                     src={MaiCarioca1}
