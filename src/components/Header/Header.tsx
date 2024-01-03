@@ -14,19 +14,39 @@ export default function Header() {
             <nav>
                 <ul className='flex gap-2'>
                     <li className='flex gap-2'>
-                        <Link href='#'>Home</Link>
+                        <Link
+                            href='#'
+                            className='hover:text-seal-brown hover:duration-500'
+                        >
+                            Home
+                        </Link>
                         <Image src={Fan} alt='Leque Fechado' />
                     </li>
                     <li className='flex gap-2'>
-                        <Link href='#'>Sobre Mim</Link>
+                        <Link
+                            href='#'
+                            className='hover:text-seal-brown hover:duration-500'
+                        >
+                            Sobre Mim
+                        </Link>
                         <Image src={Fan} alt='Leque Fechado' />
                     </li>
                     <li className='flex gap-2'>
-                        <Link href='#'>Galeria</Link>
+                        <Link
+                            href='#'
+                            className='hover:text-seal-brown hover:duration-500'
+                        >
+                            Galeria
+                        </Link>
                         <Image src={Fan} alt='Leque Fechado' />
                     </li>
                     <li className='flex gap-2'>
-                        <Link href='#'>Eventos</Link>
+                        <Link
+                            href='#'
+                            className='hover:text-seal-brown hover:duration-500'
+                        >
+                            Eventos
+                        </Link>
                     </li>
                 </ul>
             </nav>

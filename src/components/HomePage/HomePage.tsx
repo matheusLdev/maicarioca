@@ -11,7 +11,7 @@ export default function HomePage() {
                 <Image
                     src={MaiCarioca1}
                     alt='Maicarioca Cosplay'
-                    className='w-1/3 rounded-lg'
+                    className='w-1/3'
                 />
                 <div className=' h-4/5 flex flex-col justify-between text-xl text-seal-brown'>
                     <div className='flex flex-col'>
@@ -22,15 +22,19 @@ export default function HomePage() {
                             hobby faz uns 2 anos e desde então tenho me
                             apaixonado cada vez mais.
                         </p>
-                        <Link href='#' className='text-red-link text-base mt-2'>
+                        <Link
+                            href='#'
+                            className='text-red-link text-base mt-2 hover:underline'
+                        >
                             Conheça mais sobre mim
                         </Link>
                     </div>
                     <div className='flex flex-col'>
                         <p className='mb-2'>Me siga no instagram:</p>
                         <Link
-                            href='#'
-                            className='flex text-red-link text-base gap-2'
+                            href='https://www.instagram.com/maicarioca/'
+                            className='flex w-32 text-red-link text-base gap-2 hover:underline'
+                            target='_blank'
                         >
                             <Image src={Instagram} alt='Logo Instagram' />
                             @maicarioca
@@ -40,7 +44,7 @@ export default function HomePage() {
                 <Image
                     src={MaiCarioca2}
                     alt='Maicarioca Cosplay'
-                    className='w-1/3 rounded-lg'
+                    className='w-1/3'
                 />
             </div>
         </main>
