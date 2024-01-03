@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Instagram from '@/assets/icons/instagram.png';
-import MaiCarioca1 from '@/assets/img/maicarioca1.jpeg';
-import MaiCarioca2 from '@/assets/img/maicarioca2.jpeg';
+import MaiShiranui1 from '@/assets/img/mai1.jpeg';
+import MaiShiranui2 from '@/assets/img/mai2.jpeg';
 import Link from 'next/link';
 
 export default function HomePage() {
@@ -9,7 +9,7 @@ export default function HomePage() {
         <main className='w-full text-seal-brown flex justify-center'>
             <div className='w-11/12 flex justify-center items-center gap-3'>
                 <Image
-                    src={MaiCarioca1}
+                    src={MaiShiranui1}
                     alt='Maicarioca Cosplay'
                     className='w-1/3'
                 />
@@ -42,7 +42,7 @@ export default function HomePage() {
                     </div>
                 </div>
                 <Image
-                    src={MaiCarioca2}
+                    src={MaiShiranui2}
                     alt='Maicarioca Cosplay'
                     className='w-1/3'
                 />
