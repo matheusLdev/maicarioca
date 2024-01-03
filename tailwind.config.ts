@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     backgroundImage: {
       'header-footer': 'linear-gradient(#F22323, #AB0707)',
+      'photo-gallery': 'linear-gradient(to bottom, rgba(0, 0, 0, 0.2),  rgba(0, 0, 0, 1))'
     },
     extend: {
       colors: {
@@ -16,9 +17,6 @@ const config: Config = {
         'seal-brown' : '#250202',
         'red-link' : '#D21212'
       },
-      height: {
-        'photo-home-page' : '30rem'
-      }
     },
   },
   plugins: [],

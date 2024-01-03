@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer/Footer';
+import GalleryHomePage from '@/components/GalleryHomePage/GalleryHomePage';
 import Header from '@/components/Header/Header';
 import HomePage from '@/components/HomePage/HomePage';
 import NextEvent from '@/components/NextEvent/NextEvent';
@@ -9,12 +10,7 @@ export default function Home() {
             <Header />
             <NextEvent />
             <HomePage />
-            <section>
-                <h2>Meus Cosplays:</h2>
-                <a href='' target='_blank'>
-                    Ver todos os meus cosplays
-                </a>
-            </section>
+            <GalleryHomePage />
             <Footer />
         </>
     );
