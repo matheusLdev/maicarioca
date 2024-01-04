@@ -1,5 +1,64 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
+/* Animação de fade-in de baixo para cima */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 3s ease-out;
+}
 
+/* Animação de show 3D */
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translateY(50px) rotate3d(1, 0, 0, 45deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate3d(0, 0, 0, 0deg);
+  }
+}
+.animate-show {
+  animation: show 3s ease-out;
+}
+
+/* Animação de fade-in de cima para baixo */
+@keyframes fadeInDown {
+  from {
+      opacity: 0;
+      transform: translateY(-5px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.animate-fade-in-down {
+  animation: fadeInDown 3s ease-out;
+}
+
+/* Animação de background pulsando */
+@keyframes pulse {
+  0% {
+    background-size: 100% 100%;
+  }
+  50% {
+    background-size: 120% 120%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+.animate-pulse {
+  animation: pulse .5s infinite;
+}

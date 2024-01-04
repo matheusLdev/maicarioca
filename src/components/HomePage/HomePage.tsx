@@ -6,14 +6,16 @@ import Link from 'next/link';
 
 export default function HomePage() {
     return (
-        <main className='w-full text-seal-brown flex justify-center'>
-            <div className='w-11/12 flex justify-center items-center gap-3'>
-                <Image
-                    src={MaiShiranui1}
-                    alt='Maicarioca Cosplay'
-                    className='w-1/3'
-                />
-                <div className=' h-4/5 flex flex-col justify-between text-xl text-seal-brown'>
+        <main className='w-full text-seal-brown flex justify-center animate-show'>
+            <div className='w-full flex justify-center items-center gap-3'>
+                <div className='basis-1/3'>
+                    <Image
+                        src={MaiShiranui1}
+                        alt='Maicarioca Cosplay'
+                        className='object-cover'
+                    />
+                </div>
+                <div className='basis-1/3 h-4/5 flex flex-col justify-between text-xl text-seal-brown'>
                     <div className='flex flex-col'>
                         <p>
                             Olá pessoal!! Sejam bem vindos. Eu sou a Thay, mais
@@ -41,11 +43,13 @@ export default function HomePage() {
                         </Link>
                     </div>
                 </div>
-                <Image
-                    src={MaiShiranui2}
-                    alt='Maicarioca Cosplay'
-                    className='w-1/3'
-                />
+                <div className='basis-1/3'>
+                    <Image
+                        src={MaiShiranui2}
+                        alt='Maicarioca Cosplay'
+                        className='object-cover'
+                    />
+                </div>
             </div>
         </main>
     );

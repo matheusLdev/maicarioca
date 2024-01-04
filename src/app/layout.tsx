@@ -18,7 +18,7 @@ export default function RootLayout({
                 <link rel='icon' href='icon.svg' type='image/x-icon' />
             </head>
             <body
-                className={`w-full ${roboto.className} bg-page-color antialiased w-full my-0`}
+                className={`w-full ${roboto.className} bg-gradient-pulse animate-pulse antialiased w-full my-0`}
             >
                 {children}
             </body>

@@ -1,10 +1,35 @@
 'use client';
 import Link from 'next/link';
 import { CarouselSwiper } from './CarouselSwiper/CarouselSwiper';
+import { useEffect, useState } from 'react';
 
 const GalleryHomePage = () => {
+    const [animate, setAnimate] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const mainElement = document.querySelector('main');
+            const mainOffsetTop = mainElement ? mainElement.offsetTop : 0;
+            const mainHeight = mainElement ? mainElement.clientHeight : 0;
+            const scrollPosition = window.scrollY;
+            if (scrollPosition >= mainOffsetTop + mainHeight / 3) {
+                setAnimate(true);
+            } else {
+                setAnimate(false);
+            }
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
-        <section className='w-full text-center text-2xl text-seal-brown my-5'>
+        <section
+            className={`w-full text-center text-2xl text-seal-brown my-5 
+                ${animate ? 'animate-show' : 'opacity-0'}
+            `}
+        >
             <h2>Meus Cosplays:</h2>
             <CarouselSwiper />
             <Link

@@ -27,9 +27,9 @@ export default function Header() {
 
     return (
         <header
-            className={`w-full h-20 bg-header-footer fixed z-10 flex justify-around items-center text-slate-100 text-xl transition transform ease-in-out duration-500 ${
-                visible ? 'translate-y-0' : '-translate-y-full'
-            }`}
+            className={`w-full h-20 bg-header-footer fixed z-10 flex justify-around items-center text-slate-100 text-xl animate-fade-in-down transition transform ease-in-out duration-500 
+                ${visible ? 'translate-y-0' : '-translate-y-full'}
+            `}
         >
             <Link href='#'>
                 <h1

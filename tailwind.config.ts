@@ -8,15 +8,18 @@ const config: Config = {
   ],
   theme: {
     backgroundImage: {
+      'gradient-pulse': 'linear-gradient(rgba(250, 220, 220, .5), rgba(255, 200, 200, .5))',
       'header-footer': 'linear-gradient(#F22323, #AB0707)',
-      'photo-gallery': 'linear-gradient(to bottom, rgba(0, 0, 0, 0.2),  rgba(0, 0, 0, 1))'
+      'photo-gallery': 'linear-gradient(to bottom, rgba(0, 0, 0, 0.2),  rgba(0, 0, 0, .8))'
     },
     extend: {
       colors: {
-        'page-color' : '#FAF4F4',
         'seal-brown' : '#250202',
         'red-link' : '#D21212'
       },
+      height: {
+        '18' : '4.5rem',
+      }
     },
   },
   plugins: [],
