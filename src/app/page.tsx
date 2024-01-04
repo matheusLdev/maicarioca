@@ -8,10 +8,12 @@ export default function Home() {
     return (
         <>
             <Header />
-            <NextEvent />
-            <HomePage />
-            <GalleryHomePage />
-            <Footer />
+            <div className='relative top-20 z-0'>
+                <NextEvent />
+                <HomePage />
+                <GalleryHomePage />
+                <Footer />
+            </div>
         </>
     );
 }
