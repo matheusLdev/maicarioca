@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 
 const GalleryHomePage = () => {
     const [animate, setAnimate] = useState(false);
+    const [animationCompleted, setAnimationCompleted] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -12,17 +13,19 @@ const GalleryHomePage = () => {
             const mainOffsetTop = mainElement ? mainElement.offsetTop : 0;
             const mainHeight = mainElement ? mainElement.clientHeight : 0;
             const scrollPosition = window.scrollY;
-            if (scrollPosition >= mainOffsetTop + mainHeight / 3) {
+            if (
+                scrollPosition >= mainOffsetTop + mainHeight / 3 &&
+                !animationCompleted
+            ) {
                 setAnimate(true);
-            } else {
-                setAnimate(false);
+                setAnimationCompleted(true);
             }
         };
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [animationCompleted]);
 
     return (
         <section
