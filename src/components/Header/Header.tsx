@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { roboto_condensed } from '@/app/fonts';
-import Navegation from './Navegation/Navegation';
+import Navigation from './Navigation/Navigation';
 
 export default function Header() {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -26,18 +26,18 @@ export default function Header() {
 
     return (
         <header
-            className={`w-full h-20 bg-header-footer fixed z-10 flex justify-around items-center text-slate-100 text-xl animate-fade-in-down transition transform ease-in-out duration-500 
+            className={`w-full h-20 bg-header-footer fixed z-10 flex justify-between items-center px-3 text-slate-100 text-xl animate-fade-in-down transition transform ease-in-out duration-500 
                 ${visible ? 'translate-y-0' : '-translate-y-full'}
             `}
         >
             <Link href='#'>
                 <h1
-                    className={`${roboto_condensed.className} text-5xl hover:text-seal-brown hover:duration-500`}
+                    className={`${roboto_condensed.className} text-4xl md:text-5xl hover:text-seal-brown hover:duration-500`}
                 >
                     @MaiCarioca
                 </h1>
             </Link>
-            <Navegation />
+            <Navigation />
         </header>
     );
 }

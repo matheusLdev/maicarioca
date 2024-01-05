@@ -62,3 +62,15 @@
 .animate-pulse {
   animation: pulse .5s infinite;
 }
+
+/* Transição do Menu Mobile */
+.absolute {
+  transition: opacity 0.5s, height 0.5s;
+  opacity: 0;
+  height: 0;
+}
+
+.open {
+  opacity: 1;
+  height: 15rem;
+}
