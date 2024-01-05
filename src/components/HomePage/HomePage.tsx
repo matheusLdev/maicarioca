@@ -7,16 +7,16 @@ import Link from 'next/link';
 export default function HomePage() {
     return (
         <main className='w-full text-seal-brown flex justify-center animate-show'>
-            <div className='w-full flex justify-center items-center gap-3'>
-                <div className='basis-1/3'>
+            <div className='w-full flex flex-col md:flex-row justify-center items-center gap-3'>
+                <div className='min-w-72 max-w-xl'>
                     <Image
                         src={MaiShiranui1}
                         alt='Maicarioca Cosplay'
                         className='object-cover'
                     />
                 </div>
-                <div className='basis-1/3 h-4/5 flex flex-col justify-between text-xl text-seal-brown'>
-                    <div className='flex flex-col'>
+                <div className='h-full flex flex-col justify-between md:justify-around text-xl text-seal-brown gap-5 px-5 lg:px-0'>
+                    <div className='min-w-52 max-w-3xl mx-auto flex flex-col'>
                         <p>
                             Olá pessoal!! Sejam bem vindos. Eu sou a Thay, mais
                             conhecida como Mai Carioca e aqui vou mostrar um
@@ -43,7 +43,7 @@ export default function HomePage() {
                         </Link>
                     </div>
                 </div>
-                <div className='basis-1/3'>
+                <div className='min-w-72 max-w-xl'>
                     <Image
                         src={MaiShiranui2}
                         alt='Maicarioca Cosplay'
