@@ -1,9 +1,8 @@
 'use client';
-import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { roboto_condensed } from '@/app/fonts';
-import Fan from '@/assets/icons/closed-fan.svg';
+import Navegation from './Navegation/Navegation';
 
 export default function Header() {
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -38,45 +37,7 @@ export default function Header() {
                     @MaiCarioca
                 </h1>
             </Link>
-            <nav>
-                <ul className='flex gap-2'>
-                    <li className='flex gap-2'>
-                        <Link
-                            href='#'
-                            className='hover:text-seal-brown hover:duration-500'
-                        >
-                            Home
-                        </Link>
-                        <Image src={Fan} alt='Leque Fechado' />
-                    </li>
-                    <li className='flex gap-2'>
-                        <Link
-                            href='#'
-                            className='hover:text-seal-brown hover:duration-500'
-                        >
-                            Sobre Mim
-                        </Link>
-                        <Image src={Fan} alt='Leque Fechado' />
-                    </li>
-                    <li className='flex gap-2'>
-                        <Link
-                            href='#'
-                            className='hover:text-seal-brown hover:duration-500'
-                        >
-                            Galeria
-                        </Link>
-                        <Image src={Fan} alt='Leque Fechado' />
-                    </li>
-                    <li className='flex gap-2'>
-                        <Link
-                            href='#'
-                            className='hover:text-seal-brown hover:duration-500'
-                        >
-                            Eventos
-                        </Link>
-                    </li>
-                </ul>
-            </nav>
+            <Navegation />
         </header>
     );
 }
