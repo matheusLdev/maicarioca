@@ -18,7 +18,7 @@ export default function MenuMobile({
 }: MenuMobileProps) {
     return (
         <ul
-            className={`md:hidden absolute w-full top-20 left-0 flex flex-col bg-mobile
+            className={`md:hidden absolute transition-menu w-full top-20 left-0 flex flex-col bg-mobile
               ${isOpen ? 'open' : 'close'}`}
         >
             {navigationItems.map(({ title, url }, index) => (

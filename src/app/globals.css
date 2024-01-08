@@ -64,7 +64,7 @@
 }
 
 /* Transição do Menu Mobile */
-.absolute {
+.transition-menu {
   transition: opacity 0.5s, height 0.5s;
   opacity: 0;
   height: 0;
