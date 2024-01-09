@@ -13,7 +13,7 @@ export default function Navigation() {
         { title: 'Sobre Mim', url: '#' },
         { title: 'Galeria', url: '#' },
         { title: 'Eventos', url: '#' },
-        { title: 'Premiações', url: '#' },
+        { title: 'Premiação', url: '#premiacao' },
     ];
 
     const toggleMenu = () => {

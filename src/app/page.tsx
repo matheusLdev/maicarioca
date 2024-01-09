@@ -1,3 +1,4 @@
+import Awards from '@/components/Awards/Awards';
 import Footer from '@/components/Footer/Footer';
 import GalleryHomePage from '@/components/GalleryHomePage/GalleryHomePage';
 import Header from '@/components/Header/Header';
@@ -12,6 +13,7 @@ export default function Home() {
                 <NextEvent />
                 <HomePage />
                 <GalleryHomePage />
+                <Awards />
                 <Footer />
             </div>
         </>

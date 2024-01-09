@@ -29,11 +29,11 @@ const GalleryHomePage = () => {
 
     return (
         <section
-            className={`w-full text-center text-2xl text-seal-brown my-5 
+            className={`w-full text-center text-2xl text-seal-brown my-10 
                 ${animate ? 'animate-show' : 'opacity-0'}
             `}
         >
-            <h2>Meus Cosplays:</h2>
+            <h2 className='w-11/12 mx-auto text-left'>Meus Cosplays:</h2>
             <CarouselSwiper />
             <Link
                 href='#'
