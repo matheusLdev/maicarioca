@@ -26,13 +26,14 @@ export default function Header() {
 
     return (
         <header
-            className={`w-full h-20 bg-header-footer fixed z-10 flex justify-between items-center px-3 text-slate-100 text-xl animate-fade-in-down transition transform ease-in-out duration-500 
+            id='inicio'
+            className={`w-full h-20 bg-header-footer fixed z-10 flex justify-between items-center px-3 text-slate-100 text-xl transition transform ease-in-out duration-500 
                 ${visible ? 'translate-y-0' : '-translate-y-full'}
             `}
         >
-            <Link href='#'>
+            <Link href='#inicio'>
                 <h1
-                    className={`${roboto_condensed.className} text-4xl md:text-5xl hover:text-seal-brown hover:duration-500`}
+                    className={`${roboto_condensed.className} text-4xl md:text-5xl hover:text-seal-brown hover:duration-500 animate-fade-in-down`}
                 >
                     @MaiCarioca
                 </h1>

@@ -6,9 +6,12 @@ import Link from 'next/link';
 
 export default function HomePage() {
     return (
-        <main className='w-full text-seal-brown flex justify-center animate-show'>
+        <main
+            id='home-page'
+            className='w-full text-seal-brown flex justify-center'
+        >
             <div className='w-full flex flex-col md:flex-row justify-center items-center gap-3'>
-                <div className='min-w-72 max-w-xl'>
+                <div className='min-w-72 max-w-xl animate-show'>
                     <Image
                         src={MaiShiranui1}
                         alt='Maicarioca Cosplay'
@@ -16,7 +19,7 @@ export default function HomePage() {
                     />
                 </div>
                 <div className='h-full flex flex-col justify-between md:justify-around text-xl text-seal-brown gap-5 px-5 lg:px-0'>
-                    <div className='min-w-52 max-w-3xl mx-auto flex flex-col'>
+                    <div className='min-w-52 max-w-3xl mx-auto flex flex-col animate-show'>
                         <p>
                             Olá pessoal!! Sejam bem vindos. Eu sou a Thay, mais
                             conhecida como Mai Carioca e aqui vou mostrar um
@@ -25,13 +28,13 @@ export default function HomePage() {
                             apaixonado cada vez mais.
                         </p>
                         <Link
-                            href='#'
+                            href='/sobre'
                             className='text-red-link text-base mt-2 hover:underline'
                         >
                             Conheça mais sobre mim
                         </Link>
                     </div>
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col animate-show'>
                         <p className='mb-2'>Me siga no instagram:</p>
                         <Link
                             href='https://www.instagram.com/maicarioca/'
@@ -43,7 +46,7 @@ export default function HomePage() {
                         </Link>
                     </div>
                 </div>
-                <div className='min-w-72 max-w-xl'>
+                <div className='min-w-72 max-w-xl animate-show'>
                     <Image
                         src={MaiShiranui2}
                         alt='Maicarioca Cosplay'
