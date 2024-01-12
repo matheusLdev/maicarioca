@@ -5,13 +5,13 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import CosplaySlide from '../CosplaySlide/CosplaySlide';
-import AdaWong from '@/assets/img/ada-wong1.jpeg';
-import EsdeathSocial from '@/assets/img/esdeath-social1.jpeg';
-import Esdeath from '@/assets/img/esdeath1.jpeg';
-import MaiShiranui from '@/assets/img/mai5.jpeg';
-import MakimaNurse from '@/assets/img/makima-enfermeira1.jpeg';
-import Makima from '@/assets/img/makima1.jpeg';
-import Shermie from '@/assets/img/shermie1.jpeg';
+import AdaWong from '../../../../public/assets/img/ada-wong1.jpeg';
+import EsdeathSocial from '../../../../public/assets/img/esdeath-social1.jpeg';
+import Esdeath from '../../../../public/assets/img/esdeath1.jpeg';
+import MaiShiranui from '../../../../public/assets/img/mai5.jpeg';
+import MakimaNurse from '../../../../public/assets/img/makima-enfermeira1.jpeg';
+import Makima from '../../../../public/assets/img/makima1.jpeg';
+import Shermie from '../../../../public/assets/img/shermie1.jpeg';
 
 SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 

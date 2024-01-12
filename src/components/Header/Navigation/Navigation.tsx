@@ -1,18 +1,18 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import Fan from '@/assets/icons/closed-fan.svg';
-import Menu from '@/assets/icons/menu-mobile.svg';
-import ClosedMenu from '@/assets/icons/closed-menu-mobile.svg';
+import Fan from '../../../../public/assets/icons/closed-fan.svg';
+import Menu from '../../../../public/assets/icons/menu-mobile.svg';
+import ClosedMenu from '../../../../public/assets/icons/closed-menu-mobile.svg';
 import MenuMobile from '../MenuMobile/MenuMobile';
 
 export default function Navigation() {
     const [menuOpen, setMenuOpen] = useState(false);
     const navigationItems = [
-        { title: 'Home', url: '#' },
-        { title: 'Sobre Mim', url: '#' },
-        { title: 'Galeria', url: '#' },
-        { title: 'Eventos', url: '#' },
+        { title: 'Home', url: '/' },
+        { title: 'Sobre Mim', url: '/sobre' },
+        { title: 'Galeria', url: '/galeria' },
+        { title: 'Eventos', url: '/eventos' },
         { title: 'Premiação', url: '#premiacao' },
     ];
 
@@ -21,7 +21,7 @@ export default function Navigation() {
     };
 
     return (
-        <nav>
+        <nav className='animate-fade-in-down'>
             <div className='md:hidden'>
                 <button onClick={toggleMenu}>
                     {menuOpen ? (

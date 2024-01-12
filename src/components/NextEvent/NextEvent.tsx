@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import fan from '@/assets/icons/open-fan.svg';
+import fan from '../../../public/assets/icons/open-fan.svg';
 
 export default function NextEvent() {
     return (

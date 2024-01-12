@@ -1,8 +1,8 @@
-import HalfFan from '@/assets/icons/half-open-fan.svg';
+import HalfFan from '../../../../public/assets/icons/half-open-fan.svg';
 import Image from 'next/image';
-import GeekIguacu from '@/assets/img/premiacao-iguacu-geek.png';
-import ParkGeek from '@/assets/img/premiacao-parque-geek.png';
-import AnimeTopGeek from '@/assets/img/premiacao-anime-top-geek.png';
+import GeekIguacu from '../../../../public/assets/awards/premiacao-iguacu-geek.png';
+import ParkGeek from '../../../../public/assets/awards/premiacao-parque-geek.png';
+import AnimeTopGeek from '../../../../public/assets/awards/premiacao-anime-top-geek.png';
 
 export default function Award() {
     const awards = [

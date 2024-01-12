@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import Instagram from '@/assets/icons/instagram.png';
-import MaiShiranui1 from '@/assets/img/mai1.jpeg';
-import MaiShiranui2 from '@/assets/img/mai2.jpeg';
+import Instagram from '../../../public/assets/icons/instagram.png';
+import TikTok from '../../../public/assets/icons/tiktok.svg';
+import MaiShiranui1 from '../../../public/assets/img/mai1.jpeg';
+import MaiShiranui2 from '../../../public/assets/img/mai2.jpeg';
 import Link from 'next/link';
 
 export default function HomePage() {
@@ -35,13 +36,21 @@ export default function HomePage() {
                         </Link>
                     </div>
                     <div className='flex flex-col animate-show'>
-                        <p className='mb-2'>Me siga no instagram:</p>
+                        <p>Minhas redes sociais:</p>
                         <Link
                             href='https://www.instagram.com/maicarioca/'
-                            className='flex w-32 text-red-link text-base gap-2 hover:underline'
+                            className='flex w-32 text-red-link text-base gap-2 hover:underline my-2'
                             target='_blank'
                         >
                             <Image src={Instagram} alt='Logo Instagram' />
+                            @maicarioca
+                        </Link>
+                        <Link
+                            href='https://www.tiktok.com/@maicarioca?_t=8ixBGmYL6f8&_r=1'
+                            className='flex w-32 text-red-link text-base gap-2 hover:underline'
+                            target='_blank'
+                        >
+                            <Image src={TikTok} alt='Logo Tiktok' />
                             @maicarioca
                         </Link>
                     </div>

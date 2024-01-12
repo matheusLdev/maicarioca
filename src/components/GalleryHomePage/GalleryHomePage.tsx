@@ -16,7 +16,7 @@ export default function GalleryHomePage() {
             <h2 className='w-11/12 mx-auto text-left'>Meus Cosplays:</h2>
             <CarouselSwiper />
             <Link
-                href='#'
+                href='/galeria'
                 className='text-red-link hover:text-seal-brown hover:duration-500'
             >
                 Ver todos
