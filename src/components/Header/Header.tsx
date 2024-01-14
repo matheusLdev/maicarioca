@@ -33,7 +33,7 @@ export default function Header() {
         >
             <Link href='#inicio'>
                 <h1
-                    className={`${roboto_condensed.className} text-4xl md:text-5xl hover:text-seal-brown hover:duration-500 animate-fade-in-down`}
+                    className={`${roboto_condensed.className} text-4xl md:text-5xl hover:text-seal-brown hover:duration-500`}
                 >
                     @MaiCarioca
                 </h1>

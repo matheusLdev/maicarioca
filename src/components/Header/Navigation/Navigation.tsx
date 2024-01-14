@@ -13,7 +13,7 @@ export default function Navigation() {
         { title: 'Sobre Mim', url: '/sobre' },
         { title: 'Galeria', url: '/galeria' },
         { title: 'Eventos', url: '/eventos' },
-        { title: 'Premiação', url: '#premiacao' },
+        { title: 'Premiação', url: '/#premiacao' },
     ];
 
     const toggleMenu = () => {
@@ -21,7 +21,7 @@ export default function Navigation() {
     };
 
     return (
-        <nav className='animate-fade-in-down'>
+        <nav>
             <div className='md:hidden'>
                 <button onClick={toggleMenu}>
                     {menuOpen ? (
