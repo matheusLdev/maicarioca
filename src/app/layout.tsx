@@ -13,7 +13,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang='PT-BR' className='scroll-smooth'>
+        <html lang='PT-BR' className='!scroll-smooth'>
             <head>
                 <link rel='icon' href='icon.svg' type='image/x-icon' />
             </head>
