@@ -3,32 +3,32 @@ import Header from '@/components/Header/Header';
 import Calendar from '@/components/Calendar/Calendar';
 import Events from '@/components/Events/Events';
 
+export const events = [
+    {
+        date: new Date(2024, 0, 14),
+        title: 'Imperial Geek Fest',
+        address: 'Rua Reinaldo Lopes, 91 - Piabetá, Magé - RJ',
+    },
+    {
+        date: new Date(2024, 0, 19),
+        title: 'Tattoo Week Rio',
+        address:
+            'EXPO MAG, Rua Beatriz Larragoiti Lucas, s/n - Cidade Nova, Rio de Janeiro - RJ',
+    },
+    {
+        date: new Date(2024, 0, 20),
+        title: 'Tattoo Week Rio',
+        address:
+            'EXPO MAG, Rua Beatriz Larragoiti Lucas, s/n - Cidade Nova, Rio de Janeiro - RJ',
+    },
+    {
+        date: new Date(2024, 0, 21),
+        title: 'Tattoo Week Rio',
+        address:
+            'EXPO MAG, Rua Beatriz Larragoiti Lucas, s/n - Cidade Nova, Rio de Janeiro - RJ',
+    },
+];
 const Event = () => {
-    const events = [
-        {
-            date: new Date(2024, 0, 14),
-            title: 'Imperial Geek Fest',
-            address: 'Rua Reinaldo Lopes, 91 - Piabetá, Magé - RJ',
-        },
-        {
-            date: new Date(2024, 0, 19),
-            title: 'Tattoo Week Rio',
-            address:
-                'EXPO MAG, Rua Beatriz Larragoiti Lucas, s/n - Cidade Nova, Rio de Janeiro - RJ',
-        },
-        {
-            date: new Date(2024, 0, 20),
-            title: 'Tattoo Week Rio',
-            address:
-                'EXPO MAG, Rua Beatriz Larragoiti Lucas, s/n - Cidade Nova, Rio de Janeiro - RJ',
-        },
-        {
-            date: new Date(2024, 0, 21),
-            title: 'Tattoo Week Rio',
-            address:
-                'EXPO MAG, Rua Beatriz Larragoiti Lucas, s/n - Cidade Nova, Rio de Janeiro - RJ',
-        },
-    ];
     return (
         <>
             <Header />
