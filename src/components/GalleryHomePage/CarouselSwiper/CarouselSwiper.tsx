@@ -17,7 +17,7 @@ SwiperCore.use([Navigation, Pagination, EffectCoverflow]);
 
 export const CarouselSwiper = () => {
     const cosplayImages = [
-        { src: AdaWong, name: 'Ada Wong de Resident Evil - Remake 4!' },
+        { src: AdaWong, name: 'Ada Wong de Resident Evil 4 - Remake!' },
         { src: Esdeath, name: 'Esdeath de Akame Ga Kill!' },
         { src: Makima, name: 'Makima de Chainsaw Man!' },
         { src: MaiShiranui, name: 'Mai Shiranui de The King Of Fighters!' },

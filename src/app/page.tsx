@@ -3,7 +3,7 @@ import Footer from '@/components/Footer/Footer';
 import GalleryHomePage from '@/components/GalleryHomePage/GalleryHomePage';
 import Header from '@/components/Header/Header';
 import HomePage from '@/components/HomePage/HomePage';
-import NextEvent from '@/components/NextEvent/NextEvent';
+import NextEvent from '@/components/Events/NextEvent/NextEvent';
 
 export default function Home() {
     return (
