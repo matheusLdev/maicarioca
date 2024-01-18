@@ -27,7 +27,7 @@ export default function Header() {
     return (
         <header
             id='inicio'
-            className={`w-full h-20 bg-header-footer fixed z-10 flex justify-between items-center px-3 text-slate-100 text-xl transition transform ease-in-out duration-500 
+            className={`w-full h-20 bg-header-footer fixed z-10 flex justify-between items-center px-5 text-slate-100 text-xl transition transform ease-in-out duration-500 
                 ${visible ? 'translate-y-0' : '-translate-y-full'}
             `}
         >
