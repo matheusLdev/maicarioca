@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { roboto } from './fonts';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
     title: '@MaiCarioca',
@@ -21,6 +22,7 @@ export default function RootLayout({
                 className={`w-full ${roboto.className} bg-gradient-pulse animate-pulse antialiased w-full my-0`}
             >
                 {children}
+                <Analytics />
             </body>
         </html>
     );
