@@ -3,10 +3,21 @@ import FanCalendar from '../../../public/assets/icons/leque-calendar.svg';
 import Image from 'next/image';
 
 const Events: React.FC<EventsProps> = ({ events }) => {
-    const formatDate = (date: Date) => {
-        const day = date.getDate();
-        const month = ('0' + (date.getMonth() + 1)).slice(-2);
-        const year = date.getFullYear();
+    const parseDateString = (dateString: string): Date => {
+        const [day, month, year] = dateString.split('/').map(Number);
+        const parsedDate = new Date(year, month - 1, day);
+        parsedDate.setHours(parsedDate.getHours() - 3);
+
+        return parsedDate;
+    };
+
+    const formatDate = (date: string | Date) => {
+        const eventDate =
+            typeof date === 'string' ? parseDateString(date) : date;
+
+        const day = eventDate.getDate();
+        const month = ('0' + (eventDate.getMonth() + 1)).slice(-2);
+        const year = eventDate.getFullYear();
         return `${day}/${month}/${year}`;
     };
 

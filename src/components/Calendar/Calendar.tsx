@@ -6,16 +6,13 @@ import { EventsProps } from '@/interface/Event';
 
 const Calendar: React.FC<EventsProps> = ({ events }) => {
     const currentMonth = new Date().getMonth();
-
     const getDaysInMonth = (year: number, month: number) =>
-        new Date(year, month + 1, 0).getDate();
-
+        new Date(year, month, 0).getDate();
     const createDaysArray = (year: number, month: number) => {
         const daysInMonth = getDaysInMonth(year, month);
         return Array.from({ length: daysInMonth }, (_, index) => index + 1);
     };
     const daysArray = createDaysArray(new Date().getFullYear(), currentMonth);
-
     const monthYearString = new Intl.DateTimeFormat('pt-BR', {
         year: 'numeric',
         month: 'long',
@@ -69,9 +66,18 @@ const Calendar: React.FC<EventsProps> = ({ events }) => {
                         daysArray={daysArray}
                         currentMonth={currentMonth}
                         events={events.reduce((acc, event) => {
-                            const key = `${
-                                event.date.getMonth() + 1
-                            }/${event.date.getDate()}`;
+                            const currentDate = new Date(event.date);
+                            const options = {
+                                year: 'numeric',
+                                month: '2-digit',
+                                day: '2-digit',
+                                timeZone: 'America/Sao_Paulo',
+                            };
+                            const key = currentDate.toLocaleDateString(
+                                'pt-BR',
+                                options as Intl.DateTimeFormatOptions
+                            );
+
                             if (!acc[key]) {
                                 acc[key] = [];
                             }

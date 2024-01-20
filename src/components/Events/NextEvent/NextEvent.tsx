@@ -5,6 +5,8 @@ import { EventsProps } from '@/interface/Event';
 
 const getNextEvent = (events: EventsProps['events']) => {
     const currentDate = new Date();
+    currentDate.setHours(currentDate.getHours() - 3);
+
     const futureEvents = events.filter((event) => event.date >= currentDate);
     const nextEvent = futureEvents.sort(
         (a, b) => a.date.getTime() - b.date.getTime()
@@ -12,7 +14,6 @@ const getNextEvent = (events: EventsProps['events']) => {
 
     return nextEvent;
 };
-
 const NextEvent = () => {
     const nextEvent = getNextEvent(events);
     return (

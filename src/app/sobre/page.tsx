@@ -22,15 +22,15 @@ export default function about() {
                             como agorafobia, depressão e ansiedade, que me
                             impediam de aproveitar eventos e sair de casa.
                         </p>
-                        <div className='w-full flex justify-between gap-5'>
-                            <div className='w-1/4'>
+                        <div className='w-full flex flex-wrap justify-center md:flex-nowrap md:justify-between gap-5'>
+                            <div className='w-2/4 md:w-1/4'>
                                 <Image
                                     src={PhotoThayane}
                                     alt='Thayane - Maicarioca'
                                     className='object-contain h-max'
                                 />
                             </div>
-                            <div className='w-3/4 flex flex-col justify-between'>
+                            <div className='w-full md:w-3/4 flex flex-col justify-between'>
                                 <p className='w-full'>
                                     Após iniciar o tratamento, consegui superar
                                     esses obstáculos e finalmente participar dos

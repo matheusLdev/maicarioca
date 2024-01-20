@@ -1,18 +1,14 @@
 import Image from 'next/image';
 import CurrentDay from '../../../../public/assets/icons/current-day.svg';
 import Fan from '../../../../public/assets/icons/leque-calendar.svg';
-
-interface WeeksProps {
-    daysArray: number[];
-    currentMonth: number;
-    events: Record<string, string[]>;
-}
+import { WeeksProps } from '@/interface/WeeksProps';
 
 const Weeks: React.FC<WeeksProps> = ({ daysArray, currentMonth, events }) => {
     const renderWeeks = () => {
         const weeks = [];
         let currentWeek = [];
-        let startDayOfWeek = new Date(
+
+        const startDayOfWeek = new Date(
             new Date().getFullYear(),
             currentMonth,
             1
@@ -28,16 +24,21 @@ const Weeks: React.FC<WeeksProps> = ({ daysArray, currentMonth, events }) => {
                 ></td>
             );
         }
-
         for (let i = 0; i <= daysArray.length; i++) {
             const day = daysArray[i - 1];
             const dayOfWeek = (offset + i) % 7;
+            const currentDate = new Date(
+                new Date().getFullYear(),
+                currentMonth,
+                day,
+                3
+            );
+            const today = new Date();
+            today.setHours(today.getHours() - 3);
+            const event = events[currentDate.toLocaleDateString()];
             const isToday =
-                new Date().getDate() === day &&
-                new Date().getMonth() === currentMonth &&
-                new Date().getFullYear() === new Date().getFullYear();
-            const eventKey = `${currentMonth + 1}/${day}`;
-            const eventTitles = events[eventKey] || [];
+                today.toLocaleDateString() === currentDate.toLocaleDateString();
+            const eventTitles = event || [];
             currentWeek.push(
                 <td
                     key={i}
@@ -67,7 +68,6 @@ const Weeks: React.FC<WeeksProps> = ({ daysArray, currentMonth, events }) => {
                     </div>
                 </td>
             );
-
             if (dayOfWeek === 6 || i === daysArray.length) {
                 const remainingDays = 7 - currentWeek.length;
                 for (let j = 0; j < remainingDays; j++) {
@@ -76,11 +76,12 @@ const Weeks: React.FC<WeeksProps> = ({ daysArray, currentMonth, events }) => {
                             key={`empty-${i + j}`}
                             className='h-14 border border-black text-right opacity-25'
                         >
-                            {j + 1}
+                            <div className='h-full flex justify-start items-start'>
+                                {j + 1}
+                            </div>
                         </td>
                     );
                 }
-
                 weeks.push(
                     <tr key={weeks.length} className='h-14 border border-black'>
                         {currentWeek}
@@ -92,8 +93,6 @@ const Weeks: React.FC<WeeksProps> = ({ daysArray, currentMonth, events }) => {
 
         return weeks;
     };
-
     return <>{renderWeeks()}</>;
 };
-
 export default Weeks;
