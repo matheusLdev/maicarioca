@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "TIME_ZONE=America/Sao_Paulo next dev",
+    "build": "TIME_ZONE=America/Sao_Paulo next build",
+    "start": "TIME_ZONE=America/Sao_Paulo next start",
     "lint": "next lint"
   },
   "dependencies": {
