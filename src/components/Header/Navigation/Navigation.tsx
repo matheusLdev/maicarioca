@@ -23,7 +23,7 @@ export default function Navigation() {
 
     return (
         <>
-            <Link href='#inicio' onClick={toggleMenu}>
+            <Link href='#inicio'>
                 <h1
                     className={`${roboto_condensed.className} text-4xl md:text-5xl hover:text-seal-brown hover:duration-500`}
                 >

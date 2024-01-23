@@ -2,9 +2,10 @@ import Image from 'next/image';
 import fan from '../../../../public/assets/icons/open-fan.svg';
 import { events } from '@/app/eventos/page';
 import { EventsProps } from '@/interface/Event';
+import timeZone from '@/utilities/timeZone';
 
 const getNextEvent = (events: EventsProps['events']) => {
-    const currentDate = new Date();
+    const currentDate = timeZone(new Date());
     currentDate.setHours(currentDate.getHours() - 3);
 
     const futureEvents = events.filter((event) => event.date >= currentDate);
@@ -14,8 +15,20 @@ const getNextEvent = (events: EventsProps['events']) => {
 
     return nextEvent;
 };
+
+const formatEventDate = (date: Date) => {
+    const options: Intl.DateTimeFormatOptions = {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+    };
+
+    return date.toLocaleDateString('pt-BR', options);
+};
+
 const NextEvent = () => {
     const nextEvent = getNextEvent(events);
+
     return (
         <section className='h-18 text-center text-sm sm:text-base md:text-2xl text-seal-brown'>
             <div className='h-full flex items-center justify-center gap-1 md:gap-5 animate-fade-in-up'>
@@ -23,7 +36,7 @@ const NextEvent = () => {
                 {nextEvent ? (
                     <h2 className='py-2'>
                         Próximo Evento: {nextEvent.title} em{' '}
-                        {nextEvent.date.toLocaleDateString()}
+                        {formatEventDate(nextEvent.date)}
                     </h2>
                 ) : (
                     <h2 className='py-2'>
