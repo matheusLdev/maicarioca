@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Weeks from './Weeks/Weeks';
 import FanCalendar from '../../../public/assets/icons/leque-calendar.svg';
 import { EventsProps } from '@/interface/Event';
+import timeZone from '@/utilities/timeZone';
 
 const Calendar: React.FC<EventsProps> = ({ events }) => {
     const currentMonth = new Date().getMonth();
@@ -66,7 +67,7 @@ const Calendar: React.FC<EventsProps> = ({ events }) => {
                         daysArray={daysArray}
                         currentMonth={currentMonth}
                         events={events.reduce((acc, event) => {
-                            const currentDate = new Date(event.date);
+                            const currentDate = timeZone(new Date(event.date));
                             const options = {
                                 year: 'numeric',
                                 month: '2-digit',
