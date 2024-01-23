@@ -15,7 +15,7 @@ const Events: React.FC<EventsProps> = ({ events }) => {
         const eventDate =
             typeof date === 'string' ? parseDateString(date) : date;
 
-        const day = eventDate.getDate();
+        const day = ('0' + eventDate.getDate()).slice(-2);
         const month = ('0' + (eventDate.getMonth() + 1)).slice(-2);
         const year = eventDate.getFullYear();
         return `${day}/${month}/${year}`;

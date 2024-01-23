@@ -1,7 +1,5 @@
 'use client';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { roboto_condensed } from '@/app/fonts';
 import Navigation from './Navigation/Navigation';
 
 export default function Header() {
@@ -31,13 +29,6 @@ export default function Header() {
                 ${visible ? 'translate-y-0' : '-translate-y-full'}
             `}
         >
-            <Link href='#inicio'>
-                <h1
-                    className={`${roboto_condensed.className} text-4xl md:text-5xl hover:text-seal-brown hover:duration-500`}
-                >
-                    @MaiCarioca
-                </h1>
-            </Link>
             <Navigation />
         </header>
     );

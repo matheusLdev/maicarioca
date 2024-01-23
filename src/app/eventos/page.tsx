@@ -2,30 +2,37 @@ import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import Calendar from '@/components/Calendar/Calendar';
 import Events from '@/components/Events/Events';
+import timeZone from '@/utilities/timeZone';
 
 export const events = [
     {
-        date: new Date(2024, 0, 14),
+        date: timeZone(new Date(2024, 0, 14)),
         title: 'Imperial Geek Fest',
         address: 'Rua Reinaldo Lopes, 91 - Piabetá, Magé - RJ',
     },
     {
-        date: new Date(2024, 0, 19),
+        date: timeZone(new Date(2024, 0, 19)),
         title: 'Tattoo Week Rio',
         address:
             'EXPO MAG, Rua Beatriz Larragoiti Lucas, s/n - Cidade Nova, Rio de Janeiro - RJ',
     },
     {
-        date: new Date(2024, 0, 20),
+        date: timeZone(new Date(2024, 0, 20)),
         title: 'Tattoo Week Rio',
         address:
             'EXPO MAG, Rua Beatriz Larragoiti Lucas, s/n - Cidade Nova, Rio de Janeiro - RJ',
     },
     {
-        date: new Date(2024, 0, 21),
+        date: timeZone(new Date(2024, 0, 21)),
         title: 'Tattoo Week Rio',
         address:
             'EXPO MAG, Rua Beatriz Larragoiti Lucas, s/n - Cidade Nova, Rio de Janeiro - RJ',
+    },
+    {
+        date: timeZone(new Date(2024, 1, 2)),
+        title: 'Bailão Geek',
+        address:
+            'Mansão L&D, Rua André Cavalcanti, 58 - Centro, Rio de Janeiro - RJ',
     },
 ];
 const Event = () => {

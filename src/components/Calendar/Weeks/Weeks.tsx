@@ -74,16 +74,15 @@ const Weeks: React.FC<WeeksProps> = ({ daysArray, currentMonth, events }) => {
                     currentWeek.push(
                         <td
                             key={`empty-${i + j}`}
-                            className='h-14 border border-black text-right opacity-25'
-                        >
-                            <div className='h-full flex justify-start items-start'>
-                                {j + 1}
-                            </div>
-                        </td>
+                            className='h-14 bg-gradient-pulse'
+                        ></td>
                     );
                 }
                 weeks.push(
-                    <tr key={weeks.length} className='h-14 border border-black'>
+                    <tr
+                        key={weeks.length}
+                        className='h-14 border border-red-100'
+                    >
                         {currentWeek}
                     </tr>
                 );
