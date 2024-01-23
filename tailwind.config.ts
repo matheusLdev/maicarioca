@@ -22,7 +22,7 @@ const config: Config = {
         '18' : '4.5rem',
       },
       minHeight: {
-        'screen-20': '80vh',
+        'screen-10': '90vh',
       }
     },
   },

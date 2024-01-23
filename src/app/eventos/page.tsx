@@ -40,7 +40,7 @@ const Event = () => {
         <>
             <Header />
             <div className='relative top-20 z-0'>
-                <main className='w-full min-h-screen-20 text-seal-brown pt-5 animate-show'>
+                <main className='w-full min-h-screen-10 text-seal-brown pt-5 animate-show'>
                     <h2 className='font-bold text-center text-3xl mb-4'>
                         Calendário de Eventos
                     </h2>
