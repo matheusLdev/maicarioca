@@ -6,7 +6,7 @@ import timeZone from '@/utilities/timeZone';
 
 export const events = [
     {
-        date: timeZone(new Date(2024, 0, 14)),
+        date: timeZone(new Date(2024, 0, 13)),
         title: 'Imperial Geek Fest',
         address: 'Rua Reinaldo Lopes, 91 - Piabetá, Magé - RJ',
     },
