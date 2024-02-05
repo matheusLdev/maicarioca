@@ -6,33 +6,22 @@ import timeZone from '@/utilities/timeZone';
 
 export const events = [
     {
-        date: timeZone(new Date(2024, 0, 13)),
-        title: 'Imperial Geek Fest',
-        address: 'Rua Reinaldo Lopes, 91 - Piabetá, Magé - RJ',
-    },
-    {
-        date: timeZone(new Date(2024, 0, 19)),
-        title: 'Tattoo Week Rio',
-        address:
-            'EXPO MAG, Rua Beatriz Larragoiti Lucas, s/n - Cidade Nova, Rio de Janeiro - RJ',
-    },
-    {
-        date: timeZone(new Date(2024, 0, 20)),
-        title: 'Tattoo Week Rio',
-        address:
-            'EXPO MAG, Rua Beatriz Larragoiti Lucas, s/n - Cidade Nova, Rio de Janeiro - RJ',
-    },
-    {
-        date: timeZone(new Date(2024, 0, 21)),
-        title: 'Tattoo Week Rio',
-        address:
-            'EXPO MAG, Rua Beatriz Larragoiti Lucas, s/n - Cidade Nova, Rio de Janeiro - RJ',
-    },
-    {
         date: timeZone(new Date(2024, 1, 2)),
         title: 'Bailão Geek',
         address:
             'Mansão L&D, Rua André Cavalcanti, 58 - Centro, Rio de Janeiro - RJ',
+    },
+    {
+        date: timeZone(new Date(2024, 1, 18)),
+        title: 'Cosfantasy Fest',
+        address:
+            'Tijuca Tênis Clube, Rua Conde de Bonfim, 451 - Tijuca, Rio de Janeiro - RJ',
+    },
+    {
+        date: timeZone(new Date(2024, 1, 25)),
+        title: 'Video-Game Hall',
+        address:
+            'Biblioteca Parque Estadual, Avenida Presidente Vargas, 1261 - Centro, Rio de Janeiro - RJ',
     },
 ];
 const Event = () => {
