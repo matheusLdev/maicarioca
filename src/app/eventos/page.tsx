@@ -12,12 +12,6 @@ export const events = [
             'Mansão L&D, Rua André Cavalcanti, 58 - Centro, Rio de Janeiro - RJ',
     },
     {
-        date: timeZone(new Date(2024, 1, 18)),
-        title: 'Cosfantasy Fest',
-        address:
-            'Tijuca Tênis Clube, Rua Conde de Bonfim, 451 - Tijuca, Rio de Janeiro - RJ',
-    },
-    {
         date: timeZone(new Date(2024, 1, 25)),
         title: 'Video-Game Hall',
         address:
