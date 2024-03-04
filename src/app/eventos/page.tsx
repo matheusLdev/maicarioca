@@ -6,16 +6,15 @@ import timeZone from '@/utilities/timeZone';
 
 export const events = [
     {
-        date: timeZone(new Date(2024, 1, 2)),
-        title: 'Bailão Geek',
-        address:
-            'Mansão L&D, Rua André Cavalcanti, 58 - Centro, Rio de Janeiro - RJ',
+        date: timeZone(new Date(2024, 2, 10)),
+        title: 'Central of Fighters',
+        address: 'Estrada Portela, 57, Madureira - Rio de Janeiro. Escola Zion',
     },
     {
-        date: timeZone(new Date(2024, 1, 25)),
-        title: 'Video-Game Hall',
+        date: timeZone(new Date(2024, 2, 17)),
+        title: 'Tijuca Geek',
         address:
-            'Biblioteca Parque Estadual, Avenida Presidente Vargas, 1261 - Centro, Rio de Janeiro - RJ',
+            'Avenida Melo Matos, 25, Tijuca - Rio de Janeiro. Casa dos Açores',
     },
 ];
 const Event = () => {
