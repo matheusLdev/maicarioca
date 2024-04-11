@@ -4,19 +4,7 @@ import Calendar from '@/components/Calendar/Calendar';
 import Events from '@/components/Events/Events';
 import timeZone from '@/utilities/timeZone';
 
-export const events = [
-    {
-        date: timeZone(new Date(2024, 2, 10)),
-        title: 'Central of Fighters',
-        address: 'Estrada Portela, 57, Madureira - Rio de Janeiro. Escola Zion',
-    },
-    {
-        date: timeZone(new Date(2024, 2, 17)),
-        title: 'Tijuca Geek',
-        address:
-            'Avenida Melo Matos, 25, Tijuca - Rio de Janeiro. Casa dos Açores',
-    },
-];
+export const events = [];
 const Event = () => {
     return (
         <>
